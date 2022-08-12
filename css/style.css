@@ -108,12 +108,14 @@ p {
   margin-bottom: 24px;
   font-weight: 400;
   font-size: 50px;
+  line-height: 62px;
 }
 
 .hero p {
   max-width: 534px;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 21px;
 }
 
 .hero a {
@@ -508,7 +510,8 @@ p {
 }
 
 .request-form input:focus {
-  outline: none;
+  outline: 1px solid #ffffff;
+  border-bottom-color: transparent;
 }
 
 .request-form button[type='submit'] {
