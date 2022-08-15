@@ -4,11 +4,11 @@ html {
 
 body {
   color: #533738;
-  font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
   font-weight: 400;
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
   line-height: 30px;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -16,7 +16,7 @@ a {
   overflow-y: hidden;
   color: #533738;
   text-decoration: none;
-  transition: all 0.2s linear;
+  transition: all .2s linear;
 }
 
 a:not(.show-more)::after {
@@ -27,8 +27,8 @@ a:not(.show-more)::after {
   max-width: 0;
   height: 2px;
   background-color: #533738;
-  transition: all 0.2s linear;
-  content: '';
+  transition: all .2s linear;
+  content: "";
 }
 
 a:hover {
@@ -113,9 +113,9 @@ p {
 
 .hero p {
   max-width: 534px;
+  margin-bottom: 21px;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 21px;
 }
 
 .hero a {
@@ -128,7 +128,7 @@ p {
   text-align: center;
   text-decoration: none;
   background-color: #cc8b86;
-  transition: all 0.2s linear;
+  transition: all .2s linear;
 }
 
 .hero a:hover {
@@ -160,7 +160,7 @@ p {
 .about-content {
 }
 
-.about-content p + p {
+.about-content p+p {
   margin-top: 40px;
 }
 
@@ -181,6 +181,7 @@ p {
 }
 
 .advantages-item {
+
 }
 
 .advantages-number {
@@ -216,19 +217,19 @@ p {
   margin-top: 40px;
 }
 
-.works-item:nth-child(4n + 1) {
+.works-item:nth-child(4n+1) {
   grid-column: 1 / span 4;
 }
 
-.works-item:nth-child(4n + 2) {
+.works-item:nth-child(4n+2) {
   grid-column: 5 / span 6;
 }
 
-.works-item:nth-child(4n + 3) {
+.works-item:nth-child(4n+3) {
   grid-column: 1 / span 6;
 }
 
-.works-item:nth-child(4n + 4) {
+.works-item:nth-child(4n+4) {
   grid-column: 7 / span 4;
 }
 
@@ -240,10 +241,10 @@ p {
   justify-content: center;
   padding: 35px;
   color: #ffffff;
-  background-color: rgba(100, 72, 69, 0.8);
+  background-color: rgba(100, 72, 69, .8);
   inset: 0;
   transform: translateY(-100%);
-  transition: all 0.2s linear;
+  transition: all .2s linear;
 }
 
 .works-item:hover .works-item-text {
@@ -275,6 +276,7 @@ p {
 }
 
 @keyframes bounce {
+
   0% {
     transform: translateX(0);
   }
@@ -296,7 +298,7 @@ p {
   transform-origin: left;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  content: '';
+  content: "";
 }
 
 .show-more:hover::after {
@@ -346,12 +348,13 @@ p {
 }
 
 .plan-inner {
+
 }
 
 .plan-inner ol {
   display: grid;
   grid-column-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   margin-top: 40px;
   padding-left: 0;
   counter-reset: plan;
@@ -418,7 +421,7 @@ p {
   -moz-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.2s linear;
+  transition: all .2s linear;
 }
 
 .reviews-prev:hover,
@@ -496,12 +499,13 @@ p {
 .request-form input {
   width: 100%;
   margin-bottom: 30px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #ffffff;
-  line-height: 30px;
-  color: #ffffff;
   padding: 0 0 8px 0;
+  color: #ffffff;
+  line-height: 30px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: #ffffff;
+  transition: all .2s linear;
 }
 
 .request-form input::placeholder {
@@ -510,11 +514,11 @@ p {
 }
 
 .request-form input:focus {
-  outline: 1px solid #ffffff;
-  border-bottom-color: transparent;
+  border: 1px solid #ffffff;
+  outline: none;
 }
 
-.request-form button[type='submit'] {
+.request-form button[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -524,12 +528,12 @@ p {
   text-align: center;
   text-decoration: none;
   background-color: #cc8b86;
-  transition: all 0.2s linear;
   border: 0;
   cursor: pointer;
+  transition: all .2s linear;
 }
 
-.request-form button[type='submit']:hover {
+.request-form button[type="submit"]:hover {
   transform: translateY(-2px);
   filter: brightness(110%);
 }
@@ -539,8 +543,8 @@ p {
 }
 
 .footer {
-  background-color: #efe6e4;
   padding: 37px 0;
+  background-color: #efe6e4;
 }
 
 .footer .container {
@@ -551,6 +555,7 @@ p {
 .footer-contacts {
   font-style: normal;
 }
+
 .footer-contacts span {
   margin-left: 42px;
 }
